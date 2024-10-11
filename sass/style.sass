@@ -12,10 +12,12 @@ body
     color: #777
     font-size: 16px
     font-weight: 400
-    font-family: 'Lato',Arial,Helvetica,sans-serif
+    font-family: 'Roboto',Arial,Helvetica,sans-serif
     line-height: 1.4
     background: #fff
 /*Element*/
+h1
+    margin: 25px 0
 .container
     display: flex
     flex-direction: column
@@ -23,14 +25,50 @@ body
     min-height: 100vh
     padding: 50px
     background: #fff
+.wrapper
+    width: 100%
+    max-width: 1180px
+    padding: 0 20px
 /*Header*/
-header
-    overflow: visible
+.header
     font-size: 0
     text-align: center
-    padding: 100px 0
-    background: linear-gradient(90deg, rgba(2,0,36,.5) 0%, rgba(228,118,15,.5) 50%, rgba(0,212,255,.5) 100%), url(../images/header-bg.jpg) center / cover no-repeat
+    padding: 250px 0
+    background: linear-gradient(90deg, rgba(2,0,36,.75) 0%, rgba(228,118,15,.75) 50%, rgba(0,212,255,.75) 100%), url(../images/header-bg.jpg) center / cover no-repeat
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%)
+    &-logo
+        position: absolute
+        top: 50px
+        left: 50px
+        display: block
+        width: 75px
+        height: 75px
+        &-image
+            display: block
+            width: 100%
+            margin: 0 auto
+    &-section
+        color: #fff
+        &-title
+            font-size: 50px
+            font-weight: 900
+            line-height: 60px
+            letter-spacing: 10px
+            text-transform: uppercase
+            margin: 0 0 10px 0
+        &-text
+            font-size: 40px
+            font-weight: 100
+            line-height: 50px
+            letter-spacing: 5px
+            text-transform: lowercase
+        &-button
+/*Content*/
+.main
+    font-size: 0
+    text-align: center
+.article
+    text-align: center
 /*Footer*/
-footer
+.footer
     font-size: 0
