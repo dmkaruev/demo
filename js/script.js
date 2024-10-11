@@ -1,18 +1,43 @@
-/*JSON*/
-const json = {
-    userId: 1,
-    id: 1,
-    title: 'Test title',
-    status: {
-        completed: false,
-    },
+/*Мутации*/
+const a = 10;
+let b = a;
+b = 30;
+
+console.log(a);
+console.log(b);
+
+const person = {
+    name: 'Dmitry',
+    age: 32,
 };
 
-var jsonString = JSON.stringify(json);
-console.log(jsonString);
+person.age = 33;
+person.isAdult = true;
 
-var jsonObject = JSON.parse(jsonString);
-console.log(jsonObject);
+/*Мутации копий*/
+const person2 = person;
+
+person2.age = 26;
+person2.isAdult = true;
+
+console.log(person.age);
+console.log(person.isAdult);
+
+// /*JSON*/
+// const json = {
+//     userId: 1,
+//     id: 1,
+//     title: 'Test title',
+//     status: {
+//         completed: false,
+//     },
+// };
+
+// var jsonString = JSON.stringify(json);
+// console.log(jsonString);
+
+// var jsonObject = JSON.parse(jsonString);
+// console.log(jsonObject);
 
 
 
