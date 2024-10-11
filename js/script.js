@@ -8,7 +8,7 @@ console.log(b);
 
 const person = {
     name: 'Dmitry',
-    age: 32,
+    age: 30,
 };
 
 person.age = 33;

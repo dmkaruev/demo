@@ -22,7 +22,7 @@ $js = '
 <main class="main">
     <article class="article">
         <div class="wrapper">
-            <p>.</p>
+            
         </div>
     </article>
 </main>
