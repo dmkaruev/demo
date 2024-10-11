@@ -1,27 +1,47 @@
-/*Мутации*/
-const a = 10;
-let b = a;
-b = 30;
 
-console.log(a);
-console.log(b);
 
-const person = {
-    name: 'Dmitry',
-    age: 30,
-};
 
-person.age = 33;
-person.isAdult = true;
 
-/*Мутации копий*/
-const person2 = person;
+// /*Мутации*/
+// const a = 10;
+// let b = a;
+// b = 30;
 
-person2.age = 26;
-person2.isAdult = true;
+// console.log(a);
+// console.log(b);
 
-console.log(person.age);
-console.log(person.isAdult);
+// const person = {
+//     name: 'Dmitry',
+//     age: 30,
+// };
+
+// person.age = 33;
+// person.isAdult = true;
+
+// /*Мутации копий 1*/
+// const person2 = Object.assign({}, person);
+
+// person2.age = 26;
+// person2.isAdult = true;
+
+// console.log(person.age);
+// console.log(person2.age);
+
+// /*Мутации копий 2*/
+// const person3 = {...person};
+// person3.name = 'Oleg';
+
+// console.log(person.name);
+// console.log(person2.name);
+// console.log(person3.name);
+
+// /*Мутации копий 3*/
+// const person4 = JSON.parse(JSON.stringify(person));
+
+// person4.name = 'Alice';
+
+// console.log(person.name);
+// console.log(person4.name);
 
 // /*JSON*/
 // const json = {
