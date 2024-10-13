@@ -1,6 +1,17 @@
+/*Функции*/
+let a = 5;
+let b = 3
 
+function summ(a, b) {
+    const c = a + b;
+    console.log(c);
+}
 
+a = 8;
+b = 12;
 
+summ(a, b);
+console.dir(summ);
 
 // /*Мутации*/
 // const a = 10;
