@@ -1,17 +1,27 @@
 /*Функции*/
-let a = 5;
-let b = 3
+const personOne = {
+    name: 'Bob',
+    age: 21,
+};
 
-function summ(a, b) {
-    const c = a + b;
-    console.log(c);
+function increasePersonAge(person) {
+    const updatedPerson = Object.assign({}, person);
+    updatedPerson.age += 1;
+    return updatedPerson;
 }
 
-a = 8;
-b = 12;
+const updatedPersonOne = increasePersonAge(personOne);
+console.log(personOne.age);
+console.log(updatedPersonOne.age);
 
-summ(a, b);
-console.dir(summ);
+// function summ(a, b) {
+//     let c;
+//     a = a + 1;
+//     c = a + b;
+//     return c;
+// }
+ 
+// console.log(summ(10, 3));
 
 // /*Мутации*/
 // const a = 10;
