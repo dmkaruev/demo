@@ -1,18 +1,38 @@
+/*Колбэк функции*/
+// function myName() {
+//     console.log('Dmitry');
+// }
+
+// console.log('start');
+// setTimeout(myName, 3000);
+// console.log('stop');
+
+// function anotherFunction() {
+// }
+
+// function fnWithCallback(callbackFunction) {
+//     callbackFunction();
+// }
+
+// fnWithCallback(anotherFunction);
+
+
+
 /*Функции*/
-const personOne = {
-    name: 'Bob',
-    age: 21,
-};
+// const personOne = {
+//     name: 'Bob',
+//     age: 21,
+// };
 
-function increasePersonAge(person) {
-    const updatedPerson = Object.assign({}, person);
-    updatedPerson.age += 1;
-    return updatedPerson;
-}
+// function increasePersonAge(person) {
+//     const updatedPerson = Object.assign({}, person);
+//     updatedPerson.age += 1;
+//     return updatedPerson;
+// }
 
-const updatedPersonOne = increasePersonAge(personOne);
-console.log(personOne.age);
-console.log(updatedPersonOne.age);
+// const updatedPersonOne = increasePersonAge(personOne);
+// console.log(personOne.age);
+// console.log(updatedPersonOne.age);
 
 // function summ(a, b) {
 //     let c;
@@ -22,6 +42,8 @@ console.log(updatedPersonOne.age);
 // }
  
 // console.log(summ(10, 3));
+
+
 
 // /*Мутации*/
 // const a = 10;
@@ -38,6 +60,8 @@ console.log(updatedPersonOne.age);
 
 // person.age = 33;
 // person.isAdult = true;
+
+
 
 // /*Мутации копий 1*/
 // const person2 = Object.assign({}, person);
@@ -56,6 +80,8 @@ console.log(updatedPersonOne.age);
 // console.log(person2.name);
 // console.log(person3.name);
 
+
+
 // /*Мутации копий 3*/
 // const person4 = JSON.parse(JSON.stringify(person));
 
@@ -63,6 +89,8 @@ console.log(updatedPersonOne.age);
 
 // console.log(person.name);
 // console.log(person4.name);
+
+
 
 // /*JSON*/
 // const json = {
