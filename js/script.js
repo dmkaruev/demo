@@ -1,3 +1,14 @@
+/*Строгий режим*/
+// 'use strict'
+// function myFn() {
+//     a = true;
+//     console.log(a);
+// }
+// myFn();
+// console.log(a);
+
+
+
 // /*Жизненный цикл переменных*/
 // let a;
 // let b;
