@@ -1,0 +1,173 @@
+/*Variable*/
+$color-gray: #777
+$color-brown-light: #BA8554
+$color-brown-dark: #A14F03
+$color-black: #000
+$color-white: #fff
+$box-shadow: (0px .5rem .5rem rgba($color-black,0.35))
+/*Mixin*/
+@mixin style-link($color)
+    display: inline-block
+    color: $color
+    text-transform: uppercase
+    text-decoration: none
+/*Global*/
+html
+    height: 100%
+    font-size: 62.5%
+body
+    width: 100%
+    height: 100%
+    color: $color-gray
+    font-size: 1.6rem
+    font-weight: 400
+    font-family: 'Roboto',Arial,Helvetica,sans-serif
+    line-height: 1.4
+    background: $color-white
+/*Element*/
+h1
+    margin: 2.5rem 0
+h2
+    margin: 1.5rem 0
+.container
+    display: flex
+    flex-direction: column
+    max-width: 100%
+    min-height: 100vh
+    padding: 5rem
+    background: $color-white
+.wrapper
+    overflow: visible
+    width: 100%
+    max-width: 1180px
+    padding: 0 2rem
+.button
+    @include style-link($color-gray)
+    font-size: 2rem
+    font-weight: 300
+    line-height: 3rem
+    padding: 1.5rem 4rem
+    background: $color-white
+    border-radius: 5rem
+    transition: all .5s
+    &:hover, &:active
+        transform: translateY(-.5rem)
+        box-shadow: $box-shadow
+.button-animated
+    animation: downToUp 1s ease .5s
+    animation-fill-mode: backwards
+/*Header*/
+.header
+    font-size: 0
+    text-align: center
+    padding: 25rem 0
+    background: linear-gradient(90deg, rgba($color-black,.75) 0%, rgba($color-brown-light,.75) 50%, rgba(0,212,255,.75) 100%), url(../images/header-bg.jpg) center / cover no-repeat
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%)
+    &-logo
+        position: absolute
+        top: 5rem
+        left: 5rem
+        display: block
+        width: 7.5rem
+        height: 7.5rem
+        &-image
+            display: block
+            width: 100%
+            margin: 0 auto
+    &-section
+        color: $color-white
+        &-title
+            font-size: 5rem
+            font-weight: 900
+            line-height: 6rem
+            letter-spacing: 1rem
+            text-transform: uppercase
+            animation-name: leftToRight
+            animation-duration: 3s
+            animation-delay: 2s
+            animation-timing-function: ease
+            backface-visibility: hidden
+        &-text
+            font-size: 4rem
+            font-weight: 100
+            line-height: 5rem
+            letter-spacing: .5rem
+            text-transform: lowercase
+            animation-name: rightToLeft
+            animation-duration: 3s
+            animation-delay: 2s
+            animation-timing-function: ease
+            backface-visibility: hidden
+        &-button
+            position: relative
+            &:hover
+                &::after
+                    opacity: 0
+                    transform: scale(1.5)
+                &::before
+                    opacity: 0
+                    transform: scale(1.5)
+            &::after
+                content: ''
+                z-index: -1
+                position: absolute
+                top: 0
+                left: 0
+                display: inline-block
+                width: 100%
+                height: 100%
+                background: $color-white
+                border-radius: 5rem
+                transition: all .5s
+            &::before
+                content: ''
+                z-index: -1
+                position: absolute
+                bottom: 0
+                left: 0
+                display: inline-block
+                width: 100%
+                height: 100%
+                background: $color-white
+                border-radius: 5rem
+                transition: all .5s
+/*Content*/
+.main
+    font-size: 0
+    text-align: center
+.article
+    text-align: center
+/*Footer*/
+.footer
+    font-size: 0
+/*Animation*/
+@keyframes leftToRight
+    0%
+        opacity: 0
+        transform: translateX(-10rem)
+    50%
+        opacity: .5
+        transform: translateX(5rem)
+    100%
+        opacity: 1
+        transform: translateX(0)
+@keyframes rightToLeft
+    0%
+        opacity: 0
+        transform: translateX(10rem)
+    50%
+        opacity: .5
+        transform: translateX(-5rem)
+    100%
+        opacity: 1
+        transform: translateX(0)
+@keyframes downToUp
+    0%
+        opacity: 0
+        transform: translateY(5rem)
+    50%
+        opacity: .5
+        transform: translateY(-2.5rem)
+    100%
+        opacity: 1
+        transform: translateY(0)
