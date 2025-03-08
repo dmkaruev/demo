@@ -7,6 +7,6 @@
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <?php
-        echo $css;
+    echo $css;
     ?>
 </head>

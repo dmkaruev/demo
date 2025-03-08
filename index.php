@@ -12,26 +12,28 @@ $js = '
 <!DOCTYPE html>
 <html lang="ru">
 <?php
-    require_once 'head.php';
+require_once 'head.php';
 ?>
+
 <body>
-<div class="container">
-<?php
-    require_once 'header.php';
-?>
-<main class="main">
-    <article class="article">
-        <div class="wrapper">
-            
-        </div>
-    </article>
-</main>
-<?php
-    require_once 'footer.php';
-?>
-</div>
-<?php
+    <div class="container">
+        <?php
+        require_once 'header.php';
+        ?>
+        <main class="main">
+            <article class="article">
+                <div class="wrapper">
+
+                </div>
+            </article>
+        </main>
+        <?php
+        require_once 'footer.php';
+        ?>
+    </div>
+    <?php
     echo $js;
-?>
+    ?>
 </body>
+
 </html>
